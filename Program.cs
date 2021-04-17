@@ -7,7 +7,7 @@ namespace Task7v7
         static void Main(string[] args)
         {
             //* 1. Ввести 20 чисел. Найти произведение тех чисел, порядковые номера которых четные.
-            int[] numbers = new int[20];
+            /*int[] numbers = new int[20];
             string input;
             int composition = 1;
 
@@ -26,7 +26,15 @@ namespace Task7v7
                 }
             }
 
-            Console.WriteLine($"Произведение чисел с четным порядковым номером = {composition}");
+            Console.WriteLine($"Произведение чисел с четным порядковым номером = {composition}");*/
+
+            //* 2. Написать программу, которая будет печатать:
+            //* 10 тиын; ... 100 тиын. Числа вводятся от 1 до 10.
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{i} тенге = {i * 100} тиын");
+            }
         }
     }
 }
