@@ -11,7 +11,7 @@ namespace Task7v7
             string input;
             int composition = 1;
 
-            /*for (int i = 0; i < numbers.Length; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
                 Console.Write($"Введите число {i + 1}: ");
                 input = Console.ReadLine();
@@ -26,7 +26,7 @@ namespace Task7v7
                 }
             }
 
-            Console.WriteLine($"Произведение чисел с четным порядковым номером = {composition}");*/
+            Console.WriteLine($"Произведение чисел с четным порядковым номером = {composition}");
 
             //* 2. Написать программу, которая будет печатать:
             //* 10 тиын; ... 100 тиын. Числа вводятся от 1 до 10.
@@ -44,6 +44,19 @@ namespace Task7v7
             }
 
             Console.WriteLine($"{tenge} тенге = {tenge * 100} тиын");
+
+            //* 3. Рассчитать значения z для значений a, равных 2, 3, ..., 17, 
+            //*если z задается следующей формулой: у=3.5t2-7t+16, t=4a
+            
+            int t = 4;
+            double z = 0;
+
+            for (int a = 2; a <= 17; a++)
+            {
+                t *= a;
+                z = 3.5 * Math.Pow(t, 2) - 7 * t + 16;
+                Console.WriteLine($"z = {z}");
+            }
         }
     }
 }
